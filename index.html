@@ -9,6 +9,7 @@
 </head>
 <body>
   <div class="container">
+    <!--Nav Section (includes navbar items)-->
     <nav class="nav-main">
       <img src="./images/logo.svg" alt="Fylo Logo svg">
       <ul>
@@ -29,42 +30,63 @@
         </li>
       </ul>
     </nav>
-    
-    <main>
-    <div class="main-content">
-      <h1 class="title-content">
-        All your files in one secure location, accessible anywhere.
-      </h1>
-      <p class="description-content">
-        Fylo stores your most important files in one secure location.
-        Access them wherever you need, share and collaborate with friends,
-        family, and co-workers.
-      </p>
-      <form action="#">
-        <input type="email" name="email" class="email" id="Email" placeholder="enter your email..." aria-label="email" required>
-        <button type="submit" class="button" id="btn" onclick="e.preventDefault();">
-          Get Started
-        </button>
-      </form>
-      <img src="./images/illustration-1.svg" alt="illustration-1" id="img">
-    </div>
-  </main>
-  
-    Stay productive, wherever you are
-  
-    Never let location be an issue when accessing your files. Fylo has you 
-    covered for all of your file storage needs.
-  
-    Securely share files and folders with friends, family and colleagues for 
-    live collaboration. No email attachments required!
-  
-    See how Fylo works
-  
-    Fylo has improved our team productivity by an order of magnitude. Since 
-    making the switch our team has become a well-oiled collaboration machine.
-  
-    Kyle Burton
-    Founder & CEO, Huddle
+    <!--Main Section, title content other items-->
+    <section>
+      <main>
+        <div class="main-content">
+          <h1 class="title-content">
+            All your files in one secure location, accessible anywhere.
+          </h1>
+          <p class="description-content">
+            Fylo stores your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends,
+            family, and co-workers.
+          </p>
+          <form action="#">
+            <input type="email" name="email" class="email" id="Email" placeholder="enter your email..." aria-label="email" required>
+            <button type="submit" class="button" id="btn" onclick="event.preventDefault();">
+              Get Started
+            </button>
+          </form>
+          <img src="./images/illustration-1.svg" alt="illustration-1" id="img">
+        </div>
+      </main>
+    </section>
+
+    <!--Body page-->
+    <section>
+      <div class="body-content">
+        <h2 id="body-title">
+          Stay productive, wherever you are
+        </h2>
+        <p id="body-description">
+          Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.
+          <br>
+          <br>
+          Securely share files and folders with friends, family, and colleagues for
+          live collaboration. No email attachments required!
+        </p>
+        <button type="button" id="btn-learn">See how Fylo works <img src="./images/icon-arrow.svg" id="img__" alt="arrow btn icon"></button>
+        <img src="./images/illustration-2.svg" alt="body illustration" id="img_">
+        <div id="body-card">
+          <img src="./images/icon-quotes.svg" alt="card quotes" id="c-quotes">
+          <p id="body-testimonial">
+            Fylo has improved our team productivity by an order of magnitude. Since 
+            making the switch our team has become a well-oiled collaboration machine.        
+          </p>
+          <p id="testimonial-name">
+            Kyle Burton
+            <br>
+            <span id="name-job">
+              Founder & CEO, Huddle
+            </span>
+          </p>
+          <img src="./images/avatar-testimonial.jpg" alt="avatar avatar-testimonial" id="av-img">
+        </div>
+      </div>
+    </section>
+  <div class="temp">
   
     Get early access today
   
@@ -84,6 +106,7 @@
     Contact Us
     Terms
     Privacy
+  </div>
   </div>
 </body>
 </html>
